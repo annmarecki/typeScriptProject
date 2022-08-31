@@ -1,5 +1,8 @@
 "use strict";
-function message(msg) {
-    console.log(msg);
-}
-message("look at the dom manipulation");
+const input = document.getElementById("todoInput");
+const btn = document.getElementById("btn");
+btn === null || btn === void 0 ? void 0 : btn.addEventListener("click", () => {
+    alert("CLICKED");
+    alert(input.value);
+    input.value = "";
+});
